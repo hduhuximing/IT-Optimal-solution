@@ -21,11 +21,11 @@ public class Stack7 {
                 list.pollLast();
             }
             list.offer(arr[i]);
-
+            //此时内部已经超过三个
             if (list.peekFirst() == arr.length - w) {
                 list.pollFirst();
             }
-
+            //到达三个数据时，进行比较，因为前面限制住长度，因此每次都会因为等于0而进入
             if (i - w + 1 >= 0) {
                 res[index++] = arr[list.peekLast()];
             }
