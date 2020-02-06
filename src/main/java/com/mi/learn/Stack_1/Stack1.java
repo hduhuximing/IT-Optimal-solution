@@ -23,6 +23,7 @@ public class Stack1 {
         this.sk1.push(newNum);
         if (this.sk2.isEmpty()) {
             this.sk2.push(newNum);
+            //不大于当前最小栈的头结点，弹出。
         } else if (newNum <= this.sk2.peek()) {
             this.sk2.push(newNum);
         }
