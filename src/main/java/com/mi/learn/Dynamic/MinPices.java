@@ -14,15 +14,15 @@ public class MinPices {
         char[] c1 = str1.toCharArray();
         char[] c2 = str2.toCharArray();
         int[][] dp = new int[c1.length + 1][c2.length + 1];
-        for (int i = 0; i < c1.length; i++) {
+        for (int i = 0; i <= c1.length; i++) {
             dp[i][0] = dc * i;
         }
-        for (int j = 0; j < c2.length; j++) {
+        for (int j = 0; j <= c2.length; j++) {
             dp[0][j] = ic * j;
         }
-        for (int i = 1; i < c1.length; i++) {
-            for (int j = 1; j < c2.length; j++) {
-                if (c1[i] == c2[j]) {
+        for (int i = 1; i <= c1.length; i++) {
+            for (int j = 1; j <= c2.length; j++) {
+                if (c1[i - 1] == c2[j - 1]) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
                     dp[i][j] = dp[i - 1][j - 1] + rc;
