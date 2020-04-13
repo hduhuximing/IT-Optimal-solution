@@ -4,7 +4,7 @@ package com.mi.learn.Array;
  * @author ming
  * @version 1.0
  * @date 2020/2/9 7:26 下午
- * @description
+ * @description 最小的k个数
  */
 public class Heap {
     public int[] getMinKNumsByHeap(int[] arr, int k) {
@@ -54,6 +54,7 @@ public class Heap {
             int parent = (index - 1) / 2;
             if (kHeap[parent] < kHeap[index]) {
                 swap(kHeap, parent, index);
+                index=parent;
             } else {
                 break;
             }

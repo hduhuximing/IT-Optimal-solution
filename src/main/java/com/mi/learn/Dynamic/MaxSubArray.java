@@ -22,7 +22,6 @@ public class MaxSubArray {
         return dp;
     }
 
-    //    public static
     public static void main(String[] args) {
         int arr[] = {2, 1, 5, 3, 6, 4, 8, 9, 7};
         int[] dp = getdp(arr);

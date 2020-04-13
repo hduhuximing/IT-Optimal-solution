@@ -1,11 +1,12 @@
 package com.mi.learn.Stack_1;
+
 /**
  * @author ming
  * @version 1.0
- * @date 2020/2/19 5:00 下午
+ * @date 2020/2/19 5:13 下午
  * @description
  */
-public class MinStack {
+class te {
 
     Integer[] stack;    // 数组栈
     int capacity = 10;  // 容量
@@ -15,7 +16,7 @@ public class MinStack {
     /**
      * initialize your data structure here.
      */
-    public MinStack() {
+    public te() {
         stack = new Integer[capacity];
     }
 
